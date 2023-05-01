@@ -1,0 +1,144 @@
+/*body element*/
+
+body {
+  margin: 0;
+  background-image: url("./dayPlannerBeachBackground.jpg");
+  font-size: 16px;
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* header */
+.jumbotron {
+  text-align: center;
+  background-color: rgba(240, 191, 191, 0.5);
+  color: #000000;
+  border-bottom: 5px solid #000000;
+  border-radius: 0;
+}
+
+.display-2 {
+  font-family: "seaweed script regular";
+  font-weight: 500;
+  font-size: 140px;
+}
+
+h1,
+p {
+  text-shadow: 3px 4px whitesmoke;
+  font-family: "Roboto";
+  color: black;
+}
+
+/*time text moment*/
+.time-block {
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+/*rows*/
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid rgb(104, 186, 133);
+  border-bottom: 2px solid rgb(82, 201, 252);
+}
+
+/*moment  time columns*/
+.hour {
+  margin-top: 2px;
+  padding-top: 25px;
+  border-top: 4px;
+  font-weight: 600;
+}
+
+h1,
+p {
+  text-shadow: 3px 4px whitesmoke;
+  font-family: "Roboto";
+  color: black;
+}
+
+/* planner text */
+textarea {
+  background: transparent;
+  border: none;
+  resize: horizontal 50px vertical 50px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px;
+  white-space: pre-wrap;
+  background-color: none;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/*time box past, present, future*/
+
+.past {
+  background-color: #ea0a0a;
+  color: white;
+}
+
+.present {
+  background-color: #5fa2d2;
+  color: yellow;
+}
+
+.future {
+  background-color: #9fc68a;
+  color: white;
+}
+
+/*save button*/
+.saveBtn {
+  margin-top: 5px;
+  margin-left: 5px solid;
+  border-left: 1px solid black;
+  background-color: rgb(222, 207, 207);
+  color: rgb(15, 24, 14);
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: rgb(222, 207, 207) 3px 0px 0px 5px;
+  font-size: 16px;
+  transform: 0.3s;
+}
+/* delete button*/
+.deleteBtn {
+  border-left: 1px solid black;
+  background-color: #87b1ba;
+  color: rgb(148, 26, 26);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: rgb(222, 207, 207) 3px 0px 0px 5px;
+  transform: 0.3s;
+  color: rgb(148, 26, 26);
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+/*save button i hover*/
+.saveBtn i:hover {
+  font: 25px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(240, 191, 191, 0.5);
+  color: whitesmoke;
+}
+
+/* delete button i hover*/
+
+.deleteBtn i:hover {
+  font-size: 25px;
+  background-color: rgb(231, 107, 161);
+  color: rgb(244, 220, 8);
+  transition: all 0.3s ease-in-out;
+}
