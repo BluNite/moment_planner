@@ -56,13 +56,6 @@ p {
   font-weight: 600;
 }
 
-h1,
-p {
-  text-shadow: 3px 4px whitesmoke;
-  font-family: "Roboto";
-  color: black;
-}
-
 /* planner text */
 textarea {
   background: transparent;
