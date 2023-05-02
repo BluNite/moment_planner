@@ -4,8 +4,6 @@ $(document).ready(() => {
 	var headingTimeDisplay = moment().format("LL:LT");
 	var currentTime = moment().hour();
 
-
-
 	// todays's date using moment format for date
 	$("#todaysDateIs").text("Today's Date Is:   " + headingTimeDisplay);
 
@@ -18,20 +16,20 @@ $(document).ready(() => {
 
 	//variables for start and finish time, var timeBoxHors for moment start time text
 
-	// time start 900am
+	// time start moment.js format
 	let startNow = moment(timeBoxSequence.firstEntry, "HH:mm");
 
 
-	// time finishes at 500pm
+	// time end moment.js format
 	let finishTime = moment(timeBoxSequence.lastEntry, "HH:mm").add(1, 'hour');
 
 
-	// time for boxes 9am-5pm
+	// time for boxes 9am-5pm here
 	let timeBoxHours = [];
 
-	// timeBoxHours time added
+	// timeBoxHours time added stack overflow example using moment js in while loop to set condition to set time
 	while (startNow < finishTime) {
-		//moment start and finish time formatted , time added to time box 
+		//moment.js startNow and finishTime formatted , time added to time box 
 		startNow.add(timeBoxSequence.intervalBoxTime, 'minutes');
 		timeBoxHours.push(startNow.format("LT"));
 		finishTime.format("LT");
@@ -57,10 +55,10 @@ $(document).ready(() => {
 		var iconDelete = $('<i>')
 
 		// classes, attributes, text added to elements
-		//
+		//rows 
 		planRow.addClass("row  time-block");
 		planRow.attr("id", i + 9);
-		//variable to capture planColumn "id"
+		//variable to capture planRow "id"
 		var getID = planRow.attr("id");
 		// hour columns
 		hour.addClass("hour col-1");
@@ -88,31 +86,19 @@ $(document).ready(() => {
 		//append to 'root'  element
 		$("#timeBox-Id").append(planRow);
 
+
 		// time alert past(red) present(blue) future(green)
-
-
 		var textTime = (parseInt(getID))
 		if (textTime < currentTime > 20) {
 			hour.addClass('past');
 		} else if (textTime == currentTime) {
 			hour.addClass('present');
-
-
-
 		}
 		else {
-
 			hour.addClass('future');
-
-
-
 		}
-
-
-
-
-
 	}
+
 	// save button
 	$(".saveBtn").on('click', function (event) {
 		event.preventDefault();
@@ -126,6 +112,7 @@ $(document).ready(() => {
 
 
 	})
+
 	// delete button
 	$(".deleteBtn").on('click', function (event) {
 		event.preventDefault();
@@ -133,23 +120,13 @@ $(document).ready(() => {
 		var textTime = $(this).siblings("textarea").attr("value");
 		var textInput = $(this).siblings("textarea").val("");
 		localStorage.removeItem(textTime, textInput)
-
-
-
 	})
 
-
-
-
-
-	// 
+	// get item for textarea
 	$("textarea").each(function () {
 		var textInput = $(this).attr("value");
-
 		var getTextInput = localStorage.getItem(textInput)
 		$(this).parent().children("textarea").val(getTextInput)
-
-
 	})
 });
 
