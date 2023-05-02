@@ -89,12 +89,16 @@ $(document).ready(() => {
 
 		// time alert past(red) present(blue) future(green)
 		var textTime = (parseInt(getID))
-		if (textTime < currentTime) {
+		if (currentTime == textTime + 1) {
 			hour.addClass('past');
 		} else if (textTime == currentTime) {
 			hour.addClass('present');
+
+
+
 		}
 		else {
+			$('<div></div>').removeClass('past');
 			hour.addClass('future');
 		}
 	}
@@ -120,6 +124,7 @@ $(document).ready(() => {
 		var textTime = $(this).siblings("textarea").attr("value");
 		var textInput = $(this).siblings("textarea").val("");
 		localStorage.removeItem(textTime, textInput)
+
 	})
 
 	// get item for textarea
