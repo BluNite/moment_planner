@@ -3,5 +3,5 @@
 
 # Moment Day Planner a Simple Calendar App
 
-# https://blunite.github.io/moments_planner/
+# https://blunite.github.io/moment_planner/
 
