@@ -89,7 +89,7 @@ $(document).ready(() => {
 
 		// time alert past(red) present(blue) future(green)
 		var textTime = (parseInt(getID))
-		if (textTime < currentTime > 20) {
+		if (textTime < currentTime) {
 			hour.addClass('past');
 		} else if (textTime == currentTime) {
 			hour.addClass('present');
