@@ -96,7 +96,7 @@ $(document).ready(() => {
 			hour.addClass('future');
 		}
 	}
-	// w3 schools credit for jQuery elements/ gitHub topics jQuery quizApps trilogy Julianne added save button to program
+	// w3 schools credit for jQuery elements/ gitHub topics jQuery quizApps trilogy Julianne delete  button to program
 	// save button
 	$(".saveBtn").on('click', function (event) {
 		event.preventDefault();
