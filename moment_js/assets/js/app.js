@@ -88,18 +88,23 @@ $(document).ready(() => {
 		//append to 'root'  element
 		$("#timeBox-Id").append(planRow);
 
-		// time alert past present future
+		// time alert past(red) present(blue) future(green)
 
 
 		var textTime = (parseInt(getID))
-		if (textTime < currentTime) {
+		if (textTime < currentTime > 20) {
 			hour.addClass('past');
 		} else if (textTime == currentTime) {
 			hour.addClass('present');
 
+
+
 		}
 		else {
+
 			hour.addClass('future');
+
+
 
 		}
 
