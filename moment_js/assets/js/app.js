@@ -85,24 +85,18 @@ $(document).ready(() => {
 		planRow.append(deleteBtn);
 		//append to 'root'  element
 		$("#timeBox-Id").append(planRow);
-
-
 		// time alert past(red) present(blue) future(green)
 		var textTime = (parseInt(getID))
 		if (currentTime == textTime + 1) {
 			hour.addClass('past');
 		} else if (textTime == currentTime) {
 			hour.addClass('present');
-
-
-
-		}
-		else {
+		} else {
 			$('<div></div>').removeClass('past');
 			hour.addClass('future');
 		}
 	}
-
+	// w3 schools credit for jQuery elements/ gitHub topics jQuery quizApps trilogy Julianne added save button to program
 	// save button
 	$(".saveBtn").on('click', function (event) {
 		event.preventDefault();
@@ -110,11 +104,6 @@ $(document).ready(() => {
 		var textTime = $(this).siblings("textarea").attr("value");
 		var textInput = $(this).siblings("textarea").val();
 		localStorage.setItem(textTime, textInput)
-
-
-
-
-
 	})
 
 	// delete button
@@ -124,7 +113,6 @@ $(document).ready(() => {
 		var textTime = $(this).siblings("textarea").attr("value");
 		var textInput = $(this).siblings("textarea").val("");
 		localStorage.removeItem(textTime, textInput)
-
 	})
 
 	// get item for textarea
