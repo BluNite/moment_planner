@@ -1,7 +1,9 @@
+## Day Planner
 
+a Simple Calendar App that keeps time and dates using Moment.js
 
+### Image
 
-# Moment Day Planner a Simple Calendar App
+![image](/moment_js/assets/style/image/Screenshot%202023-09-15%20002849.png)
 
-# https://blunite.github.io/moment_planner/
-
+### deployed@ https://blunite.github.io/moment_planner/
