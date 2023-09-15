@@ -1,6 +1,6 @@
 ## Day Planner
 
-a Simple Calendar App that keeps time and dates using Moment.js
+a Simple Calendar App that keeps time and dates using MomentJs
 
 ### Image
 
