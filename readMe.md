@@ -57,7 +57,7 @@ Then Saved or Deleted messages persist
 ## Challenges/Observations 💡
 
 ```md
-I used documents on momentsJs and StackOverflow that featured stagnate time,
+I studied documents on momentsJs and StackOverflow that featured stagnate time,
 a loop that maintains the hour-boxes as an
 alternative to time_boxes text displayed through text. Added a delete button.
 ```
