@@ -59,4 +59,4 @@ a loop that maintains the hour-boxes as an
 alternative to time_boxes text displayed with HTML/JS. Added a delete button.
 ```
 
-made with love by bluNite 💙
+made with  💙 by bluNite
