@@ -1,4 +1,4 @@
-# Third Party API's: Day PlannerApp
+# Third Party API's: Day Planner App
 
 a simple calendar app to keep time with Moment.js date, and time library, dynamically updated HTML and CSS powered by jQuery.
 
